@@ -2,101 +2,118 @@
 
 <br />
 <div align="center">
-  <h3 align="center">Clínica Médica - Banco de Dados</h3>
+  <samp>🏥 Sistema de Gestão Hospitalar 🏥</samp>
+  <h2 align="center">🩺 Clínica Médica - Banco de Dados 📊</h2>
 
   <p align="center">
-    Atividade Prática de DDL (Parte II) desenvolvida para a disciplina de Modelagem de Banco de Dados.
-    <br />
+    <strong>Atividade Prática de DDL (Parte II)</strong><br />
+    Desenvolvido para a disciplina de Modelagem e Projeto de Banco de Dados.
   </p>
 </div>
 
 <details>
-  <summary>Índice</summary>
+  <summary>🗺️ Índice de Navegação (Clique para abrir)</summary>
   <ol>
     <li>
-      <a href="#sobre-o-projeto">Sobre o Projeto</a>
+      <a href="#-sobre-o-projeto">Sobre o Projeto</a>
       <ul>
-        <li><a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a></li>
+        <li><a href="#-tecnologias-e-ferramentas">Tecnologias e Ferramentas</a></li>
       </ul>
     </li>
-    <li><a href="#conteúdo-da-entrega">Conteúdo da Entrega</a></li>
+    <li><a href="#-conteúdo-da-entrega">Conteúdo da Entrega</a></li>
     <li>
-      <a href="#documentação-e-justificativas">Documentação e Justificativas</a>
+      <a href="#-documentação-e-justificativas">Documentação e Justificativas</a>
       <ul>
-        <li><a href="#1-índices-e-views">Índices e Views</a></li>
-        <li><a href="#2-tipos-de-dados">Tipos de Dados</a></li>
-        <li><a href="#3-restrições-constraints">Restrições</a></li>
+        <li><a href="#-descrição-de-índices-e-views">Descrição de Índices e Views</a></li>
+        <li><a href="#-escolhas-de-tipos-de-dados">Escolhas de Tipos de Dados</a></li>
+        <li><a href="#-restrições-e-regras-de-integridade-constraints">Restrições (Constraints)</a></li>
       </ul>
     </li>
-    <li><a href="#como-executar">Como Executar</a></li>
+    <li><a href="#-como-executar-o-projeto">Como Executar o Projeto</a></li>
   </ol>
 </details>
 
-## Sobre o Projeto
+---
 
-[cite_start]Este repositório contém a entrega da Atividade Prática - Parte II [cite: 3] [cite_start]da disciplina de Modelagem e Projeto de Banco de Dados [cite: 1][cite_start], ministrada pelo Professor Romes[cite: 2]. 
+## 📝 Sobre o Projeto
 
-[cite_start]O objetivo do projeto é aplicar os conceitos de DDL (Data Definition Language) na construção de um esquema completo de banco de dados[cite: 9]. [cite_start]O cenário simula o sistema de informação de uma clínica médica, contendo 10 tabelas relacionais com suas devidas chaves, restrições e relacionamentos[cite: 10].
+Este repositório contém a entrega oficial da **Atividade Prática - Parte II** da disciplina de *Modelagem e Projeto de Banco de Dados*, coordenada pelo **Professor Romes**. 
+
+🎯 **Objetivo:** Aplicar os conceitos práticos de DDL (*Data Definition Language*) para construir um esquema completo, consistente e profissional de banco de dados.
+
+O cenário simula o sistema real de uma **Clínica Médica**, contendo **10 tabelas relacionais** perfeitamente integradas com suas respectivas chaves primárias, chaves estrangeiras, restrições de integridade e índices de otimização.
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
-### Tecnologias Utilizadas
+### 🛠️ Tecnologias e Ferramentas
 
 * ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 * ![MySQL Workbench](https://img.shields.io/badge/MySQL_Workbench-1E6B7A?style=for-the-badge&logo=mysql&logoColor=white)
+* ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
-## Conteúdo da Entrega
+---
 
-[cite_start]Os seguintes arquivos estão disponíveis neste repositório para avaliação[cite: 93, 94, 95, 96]:
+## 📦 Conteúdo da Entrega
 
-1. **`clinica_medica.sql`**: Script SQL completo contendo os comandos de `CREATE DATABASE`, `CREATE TABLE`, `CREATE INDEX` e `CREATE VIEW`.
-2. **`clinica_medica.mwb`**: Arquivo de modelo gerado por engenharia reversa no MySQL Workbench.
-3. **`diagrama_eer.png`**: Captura de tela do Diagrama EER mostrando as 10 tabelas e seus relacionamentos.
-4. **Este documento (README)**: Contendo a identificação e a justificativa das escolhas técnicas de modelagem.
+Aqui na pasta você vai encontrar os arquivos obrigatórios solicitados na atividade:
 
-<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+* 💾 **`clinica_medica.sql`**: Script SQL completo com os comandos de criação do banco, tabelas, restrições, índices e view.
+* 📐 **`clinica_medica.mwb`**: Arquivo de modelo físico estruturado para abertura direta no MySQL Workbench.
+* 🖼️ **`diagrama_eer.png`**: Captura de tela do Diagrama EER mostrando as 10 tabelas e suas conexões.
+* 📄 **Este arquivo README**: Nossa documentação com o relatório detalhado de justificativas.
 
-## Documentação e Justificativas
-
-Abaixo estão detalhadas as decisões de modelagem aplicadas neste projeto, conforme os critérios de avaliação:
-
-### 1. Índices e Views
-
-* **Índice 1 (`idx_paciente_nome`):** Criado na coluna `nome` da tabela `paciente`. O motivo é que, no dia a dia da clínica, buscas pelo nome do paciente são as mais frequentes.
-* **Índice 2 (`idx_medico_nome`):** Criado na coluna `nome` da tabela `medico`. Facilita buscas rápidas pela equipe de médicos da clínica.
-* **Índice 3 (`idx_consulta_data`):** Criado na coluna `data_hora` da tabela `consulta`. Otimiza a filtragem de agendas diárias, semanais e mensais.
-* **View (`vw_consultas_agendadas`):** Criada utilizando `JOIN` entre as tabelas `consulta`, `paciente` e `medico`. Apresenta de forma simplificada o nome do paciente, nome do médico e horário da consulta, facilitando a visualização da agenda pela recepção sem a necessidade de queries complexas.
-
-### 2. Tipos de Dados
-
-* **INT:** Utilizado para as chaves primárias e estrangeiras em conjunto com o `AUTO_INCREMENT` para geração de identificadores sequenciais[cite: 53].
-* **VARCHAR vs. CHAR:** * O `VARCHAR` foi usado para campos de tamanho variável (nome, endereço, bairro, etc.), otimizando o armazenamento. 
-  * [cite_start]O `CHAR` foi aplicado em colunas de tamanho fixo para maior velocidade de processamento, como CPF (11) [cite: 63][cite_start], UF (2) e CEP (8)[cite: 65].
-* **DECIMAL(10,2):** Utilizado para dados financeiros (valor da consulta e preço do medicamento)[cite: 77, 81], evitando falhas de arredondamento.
-* [cite_start]**DATE e DATETIME:** `DATE` para registros apenas de dia (data de nascimento e adesão) [cite: 63, 75] [cite_start]e `DATETIME` para registros precisos como agendamentos e geração de prontuários[cite: 77, 79].
-* **TEXT:** Aplicado em campos extensos do prontuário (sintomas, diagnósticos e observações)[cite: 79], garantindo que as anotações médicas não sejam cortadas.
-
-### 3. Restrições (Constraints)
-
-* [cite_start]**PRIMARY KEY:** Utilizada para garantir a unicidade de cada registro nas tabelas[cite: 53].
-* [cite_start]**NOT NULL:** Aplicada em campos obrigatórios essenciais para a regra de negócio (ex: nome, CPF, data da consulta)[cite: 62, 63, 77].
-* **UNIQUE:** Garante que dados que não devem se repetir no sistema, como CPF, CRM, CNPJ e e-mails, sejam únicos no banco[cite: 63, 67, 69, 72].
-* **CHECK:** Validação de regras lógicas a nível de banco. [cite_start]Exemplos: `CHECK (sexo IN ('M','F','O'))` na tabela paciente [cite: 63] [cite_start]e verificações de valores financeiros onde o valor não pode ser negativo (`valor >= 0`)[cite: 77].
-* **DEFAULT:** Otimização de cadastros. Exemplo: status de consultas entram como `'AGENDADA'` por padrão [cite: 77] e a data do prontuário usa `CURRENT_TIMESTAMP`[cite: 79].
-* **FOREIGN KEY:** Garantem a integridade referencial. [cite_start]Na tabela endereço, foi utilizado `ON DELETE CASCADE` [cite: 65] para remover endereços de pacientes deletados do sistema, evitando dados órfãos.
+### 🖼️ Visualização do Diagrama EER
+<div align="center">
+  <img src="diagrama_eer.png" alt="Diagrama EER Clínica Médica" width="95%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+</div>
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
-## Como Executar
+---
 
-[cite_start]Para testar este esquema de banco de dados localmente[cite: 12]:
+## 🔍 Documentação e Justificativas
 
-1. [cite_start]Tenha o **MySQL Server (versão 8.0+)** e o **MySQL Workbench** instalados[cite: 12].
-2. Baixe o arquivo `clinica_medica.sql` deste repositório.
-3. [cite_start]Abra o script no Query Tab do Workbench[cite: 13].
-4. Execute o script. Ele irá automaticamente criar o banco de dados (caso não exista), criar as tabelas e inserir as chaves e índices.
-5. [cite_start]Para visualizar o modelo físico, você pode importar o arquivo `clinica_medica.mwb` ou utilizar o recurso *Database > Reverse Engineer* [cite: 108, 109] [cite_start]no seu banco local[cite: 110].
+Aqui estão explicadas todas as decisões técnicas que tomei na hora de estruturar e modelar o banco de dados:
+
+### ⚡ Descrição Index/View
+
+* 🔍 **Índice 1 (`idx_paciente_nome`):** Criei esse índice na coluna `nome` da tabela `paciente`. Pensando no dia a dia prático de uma clínica, as recepcionistas vão buscar o cadastro das pessoas principalmente pelo nome, então isso vai deixar a pesquisa do sistema infinitamente mais rápida!
+* 🔍 **Índice 2 (`idx_medico_nome`):** Aplicado na coluna `nome` da tabela `medico`, seguindo a mesma lógica do índice anterior para agilizar a busca rápida pelos nomes dos profissionais de saúde.
+* 🔍 **Índice 3 (`idx_consulta_data`):** Criado na coluna `data_hora` da tabela `consulta`. Como uma clínica precisa filtrar o tempo todo quais são as consultas agendadas do dia, da semana ou do mês, esse índice ajuda o banco de dados a processar a agenda sem travamentos.
+* 👁️ **View (`vw_consultas_agendadas`):** Essa visão realiza o relacionamento (`JOIN`) entre três tabelas distintas: `consulta`, `paciente` e `medico`. Ela serve para exibir de forma limpa o nome do paciente, o nome do médico e o horário marcado. Assim, a recepção consegue consultar a agenda de forma direta sem precisar digitar um bloco gigante de código SQL toda vez.
+
+### 🗂️ Escolhas de Tipos de Dados
+
+* 🔢 **`INT`**: Usei o tipo inteiro para todas as chaves primárias (`PK`) e estrangeiras (`FK`). Como a instrução do projeto mandou usar `AUTO_INCREMENT`, o `INT` é o tipo perfeito para gerar esses números de ID sequenciais automaticamente.
+* 🔤 **`VARCHAR`**: Usei para campos de texto que variam de tamanho entre os cadastros, como `nome`, `logradouro`, `email` e `bairro`. Desse jeito, o banco economiza memória e só gasta o espaço do que realmente for digitado.
+* 🔤 **`CHAR`**: Usei para campos que têm um tamanho padrão fixo que nunca muda, como o `cpf` (11 caracteres), a `uf` (2 caracteres) e o `cep` (8 caracteres). Como o tamanho é previsível, o MySQL processa essas informações muito mais rápido.
+* 💵 **`DECIMAL(10,2)`**: Usei no `valor` da consulta e no `preco_unitario` do medicamento. Como mexe com dinheiro, o formato decimal com duas casas é o único seguro para evitar problemas ou bugs de arredondamento de centavos.
+* 📅 **`DATE` e `DATETIME`**: Usei `DATE` para `data_nascimento` e `data_adesao` (onde só importa o dia). Já para a `consulta` e o `prontuario`, usei `DATETIME` porque registrar o horário exato do atendimento ou da criação do registro é fundamental.
+* 📝 **`TEXT`**: Usei em `sintomas`, `diagnostico` e `observacoes` na tabela de prontuário. Como os médicos podem escrever relatórios e históricos bem longos, o `VARCHAR` corria o risco de cortar o texto pela metade. O `TEXT` resolve isso perfeitamente.
+
+### 🛡️ Restrições e Regras de Integridade (Constraints)
+
+* 🔑 **PRIMARY KEY & AUTO_INCREMENT**: Aplicado em todas as tabelas para garantir que cada registro seja único e indexável, impedindo qualquer duplicidade de dados no sistema.
+* 🚫 **NOT NULL**: Usei em campos essenciais do negócio. Afinal, não faz sentido o sistema aceitar cadastrar um paciente sem nome e sem CPF, ou marcar uma consulta sem uma data definida.
+* 🆔 **UNIQUE**: Apliquei no `cpf`, `email`, `crm` e `cnpj`. Isso cria uma trava de segurança impedindo que o usuário cadastre a mesma pessoa, médico ou clínica duas vezes por engano.
+* ⚖️ **CHECK**: Excelente para validações lógicas direto no motor do banco de dados. No campo `sexo`, a regra `CHECK (sexo IN ('M','F','O'))` impede a inserção de dados inválidos. Também usei `CHECK` para garantir que valores financeiros ou dias de tratamento nunca aceitem números negativos (`>= 0`).
+* ⚙️ **DEFAULT**: Usei para automatizar o fluxo. O status de uma nova consulta entra sempre como `'AGENDADA'` por padrão. No prontuário, o campo `data_registro` puxa o horário atual do servidor automaticamente usando a função `CURRENT_TIMESTAMP`.
+* 🔗 **FOREIGN KEY & ON DELETE CASCADE**: As chaves estrangeiras foram todas nomeadas seguindo o padrão exigido (`fk_tabela_origem_tabela_destino`). Um detalhe bem legal que pesquisei se dava para fazer (e funcionou!) foi aplicar o `ON DELETE CASCADE` na tabela de endereços. Isso garante que se um paciente for excluído do sistema, o endereço dele seja apagado junto automaticamente, limpando o banco e evitando que fiquem dados perdidos ou "órfãos".
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
+---
+
+## 🚀 Como Executar o Projeto
+
+Para testar e rodar este esquema de banco de dados no seu ambiente local:
+
+1. Certifique-se de ter o **MySQL Server (versão 8.0+)** e o **MySQL Workbench** instalados e rodando.
+2. Baixe o arquivo `clinica_medica.sql` disponível neste repositório.
+3. Abra o script dentro do editor de queries do seu Workbench.
+4. Execute o script completo (clicando no ícone do raiozinho ⚡). O script criará o banco `clinica_medica`, estruturará as 10 tabelas, aplicará os índices e a view de forma totalmente automatizada.
+5. Para abrir o modelo visual estruturado, basta abrir o arquivo `clinica_medica.mwb` no Workbench ou usar a função *Database > Reverse Engineer* apontando para o seu servidor local.
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
