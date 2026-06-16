@@ -1,5 +1,8 @@
 <a id="readme-top"></a>
 
+<div align="center">
+  <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=1200&auto=format&fit=crop" alt="Database Banner" width="100%" style="border-radius: 10px;">
+</div>
 <br />
 <div align="center">
   <samp>💻 Atividades Práticas de Banco de Dados 💻</samp>
@@ -64,6 +67,11 @@ O projeto está dividido em duas partes fundamentais:
 
 Aqui no repositório você vai encontrar os arquivos separados pelas etapas da atividade:
 
+<div align="center">
+  <img src="./Captura%20de%20tela%202026-06-16%20033801.png" alt="Estrutura de Pastas" width="350" style="border-radius: 8px; border: 1px solid #ddd;">
+</div>
+<br />
+
 **Arquivos da Parte I:**
 * 📄 **`Trabalho_Banco1.pdf`**: Documento contendo as resoluções escritas dos 10 exercícios DDL.
 * 📐 **`db_part1.mwb`**: Arquivo de modelo físico estruturado do sistema escolar desenvolvido na questão 10.
@@ -77,7 +85,12 @@ Aqui no repositório você vai encontrar os arquivos separados pelas etapas da a
 
 ## 🏗️ Parte I: Exercícios Práticos de DDL
 
-[cite_start]A primeira etapa consistiu em 10 desafios técnicos focados na sintaxe padrão SQL (PostgreSQL/MySQL). Os tópicos dominados e codificados foram:
+<div align="center">
+  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop" alt="Coding Database" width="100%" style="border-radius: 10px;">
+</div>
+<br />
+
+A primeira etapa consistiu em 10 desafios técnicos focados na sintaxe padrão SQL (PostgreSQL/MySQL). Os tópicos dominados e codificados foram:
 
 1. **`CREATE TABLE` (Simples):** Criação da tabela `produto` com tipos primitivos.
 2. **`CREATE TABLE` (PK Composta):** Tabela `matricula` utilizando identificadores múltiplos.
@@ -95,6 +108,11 @@ Aqui no repositório você vai encontrar os arquivos separados pelas etapas da a
 ---
 
 ## 🏥 Parte II: Clínica Médica (Documentação)
+
+<div align="center">
+  <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop" alt="Clínica Médica e Saúde" width="100%" style="border-radius: 10px;">
+</div>
+<br />
 
 A segunda etapa exigiu a criação de um banco de dados robusto simulando uma clínica médica. Aqui estão justificadas as decisões técnicas que tomei na hora de estruturar e modelar esse banco:
 
