@@ -1,7 +1,7 @@
 <a id="readme-top"></a>
 
 <div align="center">
-  <img src="./ChatGPT%20Image%2016%20de%20jun.%20de%202026,%2004_31_40.png" alt="Capa Gabriel Silva e Romes" width="100%" style="border-radius: 10px;">
+  <img src="./oi.png" alt="Capa Gabriel Silva e Romes" width="100%" style="border-radius: 10px;">
 </div>
 <br />
 <div align="center">
