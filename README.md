@@ -1,7 +1,7 @@
 <a id="readme-top"></a>
 
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=1200&auto=format&fit=crop" alt="Database Banner" width="100%" style="border-radius: 10px;">
+  <img src="./ChatGPT%20Image%2016%20de%20jun.%20de%202026,%2004_31_40.png" alt="Capa Gabriel Silva e Romes" width="100%" style="border-radius: 10px;">
 </div>
 <br />
 <div align="center">
@@ -68,7 +68,7 @@ O projeto está dividido em duas partes fundamentais:
 Aqui no repositório você vai encontrar os arquivos separados pelas etapas da atividade:
 
 <div align="center">
-  <img src="./Captura%20de%20tela%202026-06-16%20033801.png" alt="Estrutura de Pastas" width="350" style="border-radius: 8px; border: 1px solid #ddd;">
+  <img src="./259519.jpg" alt="Conteúdo" width="350" style="border-radius: 8px; border: 1px solid #ddd;">
 </div>
 <br />
 
@@ -86,7 +86,7 @@ Aqui no repositório você vai encontrar os arquivos separados pelas etapas da a
 ## 🏗️ Parte I: Exercícios Práticos de DDL
 
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop" alt="Coding Database" width="100%" style="border-radius: 10px;">
+  <img src="./Rukia%20Kuchiki.jpg" alt="Parte 1" width="100%" style="border-radius: 10px;">
 </div>
 <br />
 
@@ -110,7 +110,7 @@ A primeira etapa consistiu em 10 desafios técnicos focados na sintaxe padrão S
 ## 🏥 Parte II: Clínica Médica (Documentação)
 
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop" alt="Clínica Médica e Saúde" width="100%" style="border-radius: 10px;">
+  <img src="./˙⋆✮.jpg" alt="Parte 2" width="100%" style="border-radius: 10px;">
 </div>
 <br />
 
